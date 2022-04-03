@@ -11,7 +11,7 @@ public class Enemy : NPC
         player = GameObject.FindGameObjectWithTag("Player");
         if(player == null)
         {
-            Debug.LogError("Plejer je null");
+            Debug.LogError("Player is null");
         }
     }
 

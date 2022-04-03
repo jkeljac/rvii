@@ -700,6 +700,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3c7d5dece75cf9845ad850601668e7d8, type: 3}
   m_PrefabInstance: {fileID: 214181420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &218064255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6964801355821310078, guid: 21784e75583bd7847b965f9b16505160, type: 3}
+  m_PrefabInstance: {fileID: 752651906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &218064256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218064255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.266405, y: 1.2957022, z: 4.320782}
+  m_Center: {x: -0.14116764, y: 0.14785141, z: -0.054983854}
 --- !u!1001 &228826057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2049,7 +2067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588881780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.16, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726769585}
@@ -2664,6 +2682,7 @@ GameObject:
   - component: {fileID: 742924317}
   - component: {fileID: 742924319}
   - component: {fileID: 742924318}
+  - component: {fileID: 742924320}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2720,6 +2739,19 @@ MonoBehaviour:
   cam: {fileID: 963194227}
   speed: 5
   weapon: {fileID: 1796095078}
+--- !u!65 &742924320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742924316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &752651906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2774,6 +2806,10 @@ PrefabInstance:
     - target: {fileID: 6964801355821310078, guid: 21784e75583bd7847b965f9b16505160, type: 3}
       propertyPath: m_Name
       value: Car_B1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964801355821310078, guid: 21784e75583bd7847b965f9b16505160, type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21784e75583bd7847b965f9b16505160, type: 3}
@@ -3545,7 +3581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973797906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.19, y: 0, z: 8.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726769585}
@@ -3674,7 +3710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020875883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.65, y: 0, z: 11.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1726769585}
@@ -3752,7 +3788,6 @@ GameObject:
   - component: {fileID: 1064200883}
   - component: {fileID: 1064200886}
   - component: {fileID: 1064200885}
-  - component: {fileID: 1064200884}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -3775,20 +3810,6 @@ Transform:
   m_Father: {fileID: 742924317}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1064200884
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064200882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1064200885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6029,7 +6050,7 @@ GameObject:
   - component: {fileID: 1726769584}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6046,13 +6067,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbe7177c168d40659a56feb4f883e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedEnemies: []
   enemyPrefab: {fileID: 7305640086843951200, guid: f7c71faf8e984b65995b84c3a97d3397, type: 3}
   spawnPoints:
   - {fileID: 1020875884}
   - {fileID: 588881781}
   - {fileID: 973797907}
-  numberOfEnemies: 0
+  player: {fileID: 742924319}
+  intantiatedEnemies: []
+  spawnTime: 2
+  maxEnemyCount: 10
 --- !u!4 &1726769585
 Transform:
   m_ObjectHideFlags: 0

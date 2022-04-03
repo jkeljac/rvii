@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCharacte : MonoBehaviour, IDamageable
+public class BaseCharacter : MonoBehaviour, IDamageable
 {
     private int health;
     public int Health { get { return health; } }
 
+    private void Awake(){
+        health = 50;
+    }
+    
     public void Die()
     {
         Destroy(gameObject);

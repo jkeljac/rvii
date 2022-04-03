@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NPC : MonoBehaviour
+[RequireComponent (typeof(NavMeshAgent))]
+public class NPC : BaseCharacter
 {
     public GameObject player;
     public NavMeshAgent navMeshAgent;
@@ -11,11 +12,8 @@ public class NPC : MonoBehaviour
 
     public void MoveToPlayer()
     {
-        Debug.Log("Move to player");
-
         if (player != null && navMeshAgent.isOnNavMesh)
         {
-            Debug.Log("Destination set");
             navMeshAgent.SetDestination(player.transform.position);
         }
     }
