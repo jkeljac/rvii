@@ -13,16 +13,14 @@ public class Enemy : NPC
         {
             Debug.LogError("Player is null");
         }
+        setHealth(100);
     }
 
-    // Start is called before the first frame update
     void Start()
-    {
-        Debug.Log("Enemy start");
+    { 
         navMeshAgent.speed = moveSpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MoveToPlayer();

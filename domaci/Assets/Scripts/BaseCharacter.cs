@@ -7,8 +7,8 @@ public class BaseCharacter : MonoBehaviour, IDamageable
     private int health;
     public int Health { get { return health; } }
 
-    private void Awake(){
-        health = 50;
+    public void setHealth(int amount){
+        health = amount;
     }
     
     public void Die()
